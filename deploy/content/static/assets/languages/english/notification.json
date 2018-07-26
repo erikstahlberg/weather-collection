@@ -1,0 +1,287 @@
+{
+	"_indexFor_{type}XX.." : {
+		"00" : "generic",
+		"01" : "login",
+		"02" : "organisation",
+		"03" : "machines",
+		"04" : "users",
+		"05" : "profile",
+		"06" : "operators",
+		"07" : "reports"
+	},
+	"_notificationTypes_{type}XX.." : {
+		"err" : "Error",
+		"suc" : "Success"
+	},
+
+	"fatal" : {
+		"title" : "Fatal Error",
+		"msg" : "Contact administrator: {0}"
+	},
+
+	"_comment" : "err00.. relates to generic errors",
+	"err0001" : {
+		"title" : "Something went wrong",
+		"msg" : "Something went wrong. If the problem persists, please contact the support"
+	},
+
+	"_comment" : "suc00.. relates to generic sucessful actions",
+	"suc0001" : {
+		"title" : "OK",
+		"msg" : "The action was successful!"
+	},
+
+	"_comment" : "err01.. relates to login errors",
+	"err0101" : {
+		"title" : "Login failed",
+		"msg" : "Failed logging in. Please verify spelling and ensure that capslock is turned off."
+	},
+	"err0102" : {
+		"title" : "Could not send email",
+		"msg" : "Could not find user with the given username. Please check your spelling or contact your administrator."
+	},
+	"err0103" : {
+		"title" : "Could not set password",
+		"msg" : "The password could not be set. The link has already been used. Please contact your administrator."
+	},
+
+
+	"_comment" : "err02.. relates to failed organisation operations",
+	"err0201" : {
+		"title" : "Error",
+		"msg" : "Failed to update organisation. Reason: {0}"
+	},
+	"err0202" : {
+		"title" : "Error",
+		"msg" : "Failed to add organisation. Reason: {0}"
+	},
+	"err0203" : {
+		"title" : "Error",
+ 		"msg" : "Failed to delete organisation. Reason: {0}"
+	},
+	"err0204" : {
+		"title" : "Error",
+ 		"msg" : "Failed to delete organisation. Please make sure there is no machines in the organisation"
+	},
+
+
+	"_comment" : "suc02.. relates to successful organisation operations",
+	"suc0201" : {
+		"title" : "Success",
+		"msg" : "Successfully updated organisation"
+	},
+	"suc0202" : {
+		"title" : "Success",
+		"msg" : "Successfully added organisation {0}"
+	},
+	"suc0203" : {
+		"title" : "Success",
+ 		"msg" : "Successfully deleted organisation"
+	},
+
+
+	"_comment" : "err03.. relates to failed machine operations",
+	"err0301" : {
+		"title" : "Error",
+		"msg" : "Failed to move machines"
+	},
+	"suc0302" : {
+		"title" : "Success",
+		"msg" : "Machine moved to new organization"
+	},
+
+	"err0302" : {
+		"title" : "Error",
+		"msg" : "Failed to add the machine, please try again or contact support if the the problem persists"
+	},
+	"err0303" : {
+		"title" : "Error",
+		"msg" : "Failed to update the machine information, please try again or contact support if the the problem persists"
+	},
+	"err0304" : {
+		"title" : "Error",
+		"msg" : "Failed to remove the machine, please try again or contact support if the the problem persists"
+	},
+
+	"_comment" : "err03.. relates to machines success",
+	"suc0301" : {
+		"title" : "Success",
+		"msg" : "The machine information is now updated"
+	},
+
+
+	"_comment" : "err04.. relates to failed user operations",
+	"err0401" : {
+		"title" : "Error",
+		"msg" : "Failed to fetch user"
+	},
+	"err0402" : {
+		"title" : "Error",
+		"msg" : "Failed to add user"
+	},
+	"err0403" : {
+		"title" : "Error",
+		"msg" : "Failed to update user"
+	},
+	"err0404" : {
+		"title" : "Error",
+		"msg" : "Failed to remove user"
+	},
+	"err0405" : {
+		"title" : "Error",
+		"msg" : "Passwords are no matching"
+	},
+	"err0406" : {
+		"title" : "Error",
+		"msg" : "Failed to force password update"
+	},
+	"err0407" : {
+		"title" : "Error",
+		"msg" : "Failed to start the producedure to change password"
+	},
+	"err0408" : {
+		"title" : "Error",
+		"msg" : "User Name already exists"
+	},
+	"err0409" : {
+		"title" : "Error",
+		"msg" : "Invalid phone number format"
+	},
+
+	"_comment" : "suc04.. relates to successful user operations",
+	"suc0401" : {
+		"title" : "Success",
+		"msg" : "User information has been retrived"
+	},
+	"suc0402" : {
+		"title" : "Success",
+		"msg" : "User was successfully added"
+	},
+	"suc0403" : {
+		"title" : "Success",
+		"msg" : "User information was successfully updated"
+	},
+	"suc0404" : {
+		"title" : "Success",
+		"msg" : "User was successfully deleted"
+	},
+	"suc0406" : {
+		"title" : "Success",
+		"msg" : "Forced password reset"
+	},
+	"suc0407" : {
+		"title" : "Success",
+		"msg" : "Started the procedure to change password"
+	},
+
+	"_comment" : "err05.. relates to failed profile operations",
+	"err0501" : {
+		"title" : "Error",
+		"msg" : "Failed to change measure system: {0}"
+	},
+	"err0502" : {
+		"title" : "Error",
+		"msg" : "Failed to change the language: {0}"
+	},
+	"err0503" : {
+		"title" : "Error",
+		"msg" : "Failed to update user profile: {0}"
+	},
+	"err0504" : {
+		"title" : "Error",
+		"msg" : "Could not change password. New password does not match"
+	},
+	"err0505" : {
+		"title" : "Error",
+		"msg" : "Could not change password. The old password is incorrect"
+	},
+
+
+	"_comment" : "suc05.. relates to successful profile operations",
+	"suc0501" : {
+		"title" : "Success",
+		"msg" : "Successfully changed measure system: {0}"
+	},
+	"suc0502" : {
+		"title" : "Success",
+		"msg" : "Successfully changed language: {0}"
+	},
+	"suc0503" : {
+		"title" : "Success",
+		"msg" : "Your settings were successfully updated"
+	},
+	"suc0504" : {
+		"title" : "Success",
+		"msg" : "Your password has now been changed"
+	},
+
+	"_comment" : "err06.. relates to failed operator/driver operations",
+	"err0601" : {
+		"title" : "Error",
+		"msg" : "Failed to update operator: {0}"
+	},
+	"err0602" : {
+		"title" : "Error",
+		"msg" : "Failed to remove operator: {0}"
+	},
+	"err0603" : {
+		"title" : "Error",
+		"msg" : "Failed to fetch operator information: {0}"
+	},
+
+	"_comment" : "suc06.. relates to successful profile operations",
+	"suc0601" : {
+		"title" : "Success",
+		"msg" : "Successfully updated the operator: {0}"
+	},
+	"suc0602" : {
+		"title" : "Success",
+		"msg" : "Successfully removed operator: {0}"
+	},
+
+	"_comment" : "err07.. relates to failed reports/subscription operations",
+	"err0701" : {
+		"title" : "Error",
+		"msg" : "Failed to save subscription. Please try again or contact support if the problem persists"
+	},
+	"err0702" : {
+		"title" : "Error",
+		"msg" : "Failed to delete subscription. Please try again or contact support if the problem persists"
+	},
+
+	"_comment" : "suc07.. relates to successful reports/subscription operations",
+	"suc0701" : {
+		"title" : "Success",
+		"msg" : "Subscription was successfully saved"
+	},
+	"suc0702" : {
+		"title" : "Success",
+		"msg" : "Subscription was successfully deleted"
+	},
+
+	"err0801" : {
+		"title" : "Error",
+		"msg" : "More than 100 machines selected for printing."
+	},
+
+	"err0901" : {
+		"title" : "Error",
+		"msg" : "No data for export."
+	},
+
+	"_comment" : "suc10.. relates to analysis view operations",
+	"err1001" : {
+		"title" : "Error",
+		"msg" : "No kpis selected for export."
+	},
+	"err1002" : {
+		"title" : "Error",
+		"msg" : "Failed to render pdf in time. Select a smaller data set and try again"
+	},
+
+	"_comment" : "suc11.. relates to heater widget",
+	"err1101" : {
+		"title" : "Error",
+		"msg" : "Operation failed."
+	}
+}

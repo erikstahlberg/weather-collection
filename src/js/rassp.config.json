@@ -1,0 +1,7 @@
+{
+	"VersionNumber": "0.1",
+	"WebAPI": "https://xx/version",
+	"WebAPIRetries": 5,
+	"sessionExpirationTime": 1800000,
+	"sessionRefreshTime": 300000
+}

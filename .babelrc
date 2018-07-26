@@ -1,0 +1,14 @@
+{
+        "presets": ["react", "env"],
+        "plugins": [
+                "transform-runtime",
+                "transform-decorators-legacy",
+                "transform-object-rest-spread",
+                "syntax-class-properties",
+                "syntax-decorators",
+                "syntax-object-rest-spread",
+                "transform-class-properties",
+                "syntax-export-extensions",
+                "transform-export-extensions"
+        ]
+}

@@ -1,0 +1,275 @@
+{
+	"_indexFor_{type}XX.." : {
+		"00" : "generic",
+		"01" : "login",
+		"02" : "organisation",
+		"03" : "machines",
+		"04" : "users",
+		"05" : "profile",
+		"06" : "operators",
+		"07" : "reports"
+	},
+	"_notificationTypes_{type}XX.." : {
+		"err" : "Error",
+		"suc" : "Success"
+	},
+
+	"_comment" : "err00.. relates to generic errors",
+	"err0001" : {
+		"title" : "Något gick fel",
+		"msg" : "Något gick fel. Om problemet kvarstår, vänligen kontakta support"
+	},	
+
+	"_comment" : "suc00.. relates to generic sucessful actions",
+	"suc0001" : {
+		"title" : "OK",
+		"msg" : "Handlingen lyckades!"
+	},
+
+	"_comment" : "err01.. relates to login errors",
+	"err0101" : {
+		"title" : "Inloggning misslyckades",
+		"msg" : "Inloggning misslyckades. Kolla stavningen och se till att caps lock inte är på.."
+	},	
+
+
+	"_comment" : "err02.. relates to organisation errors",
+	"err0201" : {
+		"title" : "Fel", 
+		"msg" : "Misslyckades att uppdatera organisationen, vänligen kontakta support om problemet kvarstår"
+	},
+	"err0202" : {
+		"title" : "Fel", 
+		"msg" : "Misslyckades att lägga till organisationen, vänligen kontakta support om problemet kvarstår"
+	},
+	"err0203" : {
+		"title" : "Fel", 
+		"msg" : "Misslyckades att ta bort organisationen, vänligen kontakta support om problemet kvarstår"
+	},
+	"err0204" : {
+		"title" : "Fel",
+ 		"msg" : "Borttagning av organisation misslyckades, vänligen kontrollera att organisationen är tom"
+	},
+
+
+	"_comment" : "suc02.. relates to successful organisation operations",
+	"suc0201" : {
+		"title" : "OK", 
+		"msg" : "Uppdatering av organisation lyckades"
+	},
+	"suc0202" : {
+		"title" : "OK", 
+		"msg" : "Organisation {0} är nu tillagd"
+	},
+	"suc0203" : {
+		"title" : "OK",
+		"msg" : "Borttagning av organisation lyckades"
+	},
+
+
+	"_comment" : "err03.. relates to machines errors",
+	"err0301" : {
+		"title" : "Fel",
+		"msg" : "Misslyckades att flytta maskinen, vänligen kontakta support om problemet kvarstår"
+	},
+	"suc0302" : {
+		"title" : "Success",
+		"msg" : "Maskinen flyttad till ny organisation"
+	},
+
+	"err0302" : {
+		"title" : "Fel",
+		"msg" : "Misslyckades att lägga till maskinen, vänligen kontakta support om problemet kvarstår"
+	},
+	"err0303" : {
+		"title" : "Fel",
+		"msg" : "Uppdatering av maskininformation misslyckades, vänligen kontakta support om problemet kvarstår"
+	},
+	"err0304" : {
+		"title" : "Fel",
+		"msg" : "Maskinen kunde inte tas bort, vänligen kontakta support om problemet kvarstår"
+	},
+
+	"_comment" : "err03.. relates to machines success",
+	"suc0301" : {
+		"title" : "OK", 
+		"msg" : "Uppdatering av maskininformation lyckades"
+	},
+
+
+	"_comment" : "err04.. relates to user errors",
+	"err0401" : {
+		"title" : "Fel",
+		"msg" : "Misslyckades att hämta användaren, vänligen kontakta support om problemet kvarstår"
+	},
+	"err0402" : {
+		"title" : "Fel",
+		"msg" : "Användaren kunde inte läggas till, vänligen kontakta support om problemet kvarstår"
+	},
+	"err0403" : {
+		"title" : "Fel",
+		"msg" : "Uppdateringen av användaren misslyckades, vänligen kontakta support om problemet kvarstår"
+	},
+	"err0404" : {
+		"title" : "Fel",
+		"msg" : "Borttagningen av  användaren misslyckades, vänligen kontakta support om problemet kvarstår"
+	},
+	"err0405" : {
+		"title" : "Fel",
+		"msg" : "Lösenorden matchar inte"
+	},
+	"err0406" : {
+		"title" : "Fel",
+		"msg" : "Kunde inte forcera lösenordsbyte"
+	},
+	"err0407" : {
+		"title" : "Fel",
+		"msg" : "Misslyckades att påbörja lösenordsbytet"
+	},
+	"err0408" : {
+		"title" : "Fel",
+		"msg" : "Användarnamnet finns redan"
+	},
+	"err0409" : {
+		"title" : "Error",
+		"msg" : "Ogiltigt format för telefonnummer"
+	},
+
+	"_comment" : "suc04.. relates to successful user operations",
+	"suc0401" : {
+		"title" : "OK",
+		"msg" : "Användarinformation hämtat"
+	},
+	"suc0402" : {
+		"title" : "OK",
+		"msg" : "Användare är nu tillagd"
+	},
+	"suc0403" : {
+		"title" : "OK",
+		"msg" : "Uppdateringen av användarens information lyckades"
+	},
+	"suc0404" : {
+		"title" : "OK",
+		"msg" : "Borttagningen av användaren lyckades"
+	},
+	"suc0406" : {
+		"title" : "OK",
+		"msg" : "Forcerade lösenordsbyte"
+	},
+	"suc0407" : {
+		"title" : "OK",
+		"msg" : "Lösenordsbytet påbörjat"
+	},
+
+
+	"_comment" : "err05.. relates to failed profile operations",
+	"err0501" : {
+		"title" : "Fel", 
+		"msg" : "Kunde inte ändrat mätsystemet: {0}"
+	},
+	"err0502" : {
+		"title" : "Fel", 
+		"msg" : "Kunde inte ändrat språk: {0}"
+	},
+	"err0503" : {
+		"title" : "Fel",
+		"msg" : "Misslyckades med att uppdatera användarens profil"
+	},
+	"err0504" : {
+		"title" : "Fel",
+		"msg" : "Misslyckades med att ändra lösenordet. Nya lösenorden matchar inte"
+	},
+	"err0505" : {
+		"title" : "Fel",
+		"msg" : "Misslyckades med att ändra lösenordet. Gamla lösenordet är fel"
+	},
+
+
+	"_comment" : "suc05.. relates to successful profile operations",
+	"suc0501" : {
+		"title" : "OK", 
+		"msg" : "Mätsystem ändrat till: {0}"
+	},
+	"suc0502" : {
+		"title" : "OK", 
+		"msg" : "Språk ändrat till: {0}"
+	},
+	"suc0503" : {
+		"title" : "OK",
+		"msg" : "Profilinställningarna är uppdaterade"
+	},
+	"suc0504" : {
+		"title" : "OK",
+		"msg" : "Ditt lösenord har nu ändrats"
+	},
+
+	"_comment" : "err06.. relates to failed operator/driver operations",
+	"err0601" : {
+		"title" : "Fel", 
+		"msg" : "Kunde inte uppdatera operatör: {0}"
+	},
+	"err0602" : {
+		"title" : "Fel", 
+		"msg" : "Misslyckades att ta bort operatör: {0}"
+	},
+	"err0603" : {
+		"title" : "Fel", 
+		"msg" : "Misslyckades att hämta operatörsinformationen: {0}"
+	},
+
+	"_comment" : "suc06.. relates to successful profile operations",
+	"suc0601" : {
+		"title" : "OK", 
+		"msg" : "Informationen uppdaterad för operatör: {0}"
+	},
+	"suc0602" : {
+		"title" : "OK", 
+		"msg" : "Tog bort operatör: {0}"
+	},
+
+	"_comment" : "err07.. relates to failed reports/subscription operations",
+	"err0701" : {
+		"title" : "Fel", 
+		"msg" : "Sparningen av prenumeration misslyckades. Försök igen eller kontakta support om problemet kvarstår"
+	},
+	"err0702" : {
+		"title" : "Fel", 
+		"msg" : "Borttagningen av prenumeration misslyckades. Försök igen eller kontakta support om problemet kvarstår"
+	},
+
+	"_comment" : "suc07.. relates to successful reports/subscription operations",
+	"suc0701" : {
+		"title" : "OK", 
+		"msg" : "Sparande av prenumeration lyckades"
+	},
+	"suc0702" : {
+		"title" : "OK", 
+		"msg" : "Borttagning av prenumertion lyckades"
+	},
+
+	"err0801" : {
+		"title" : "Error", 
+		"msg" : "Fler än 100 maskiner angavs för utskrift."
+	},
+
+	"err0901" : {
+		"title" : "Error", 
+		"msg" : "Ingen data för export."
+	},
+
+	"_comment" : "suc10.. relates to analysis view operations",
+	"err1001" : {
+		"title" : "Error",
+		"msg" : "Inga värden valda för export."
+	},
+	"err1002" : {
+		"title" : "Error",
+		"msg" : "Misslyckades att rendera pdfen i tid. Prova att välja ett mindre dataset."
+	},
+
+	"_comment" : "suc11.. relates to heater widget",
+	"err1101" : {
+		"title" : "Error",
+		"msg" : "Operationen misslyckades."
+	}
+}

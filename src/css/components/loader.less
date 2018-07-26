@@ -1,0 +1,38 @@
+.loader-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+
+    &.inline-loader {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &.h-space {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .loader-inner {
+        position: absolute;
+
+        // Grabbed from https://stephanwagner.me/only-css-loading-spinner
+        @keyframes spinner {
+            to {transform: rotate(360deg);}
+        }
+
+        .loader:before {
+            content: '';
+            box-sizing: border-box;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #ccc;
+            border-top-color: #333;
+            animation: spinner .6s linear infinite;
+        }
+    }
+}

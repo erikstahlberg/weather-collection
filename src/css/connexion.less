@@ -1,0 +1,361 @@
+
+
+//@import "https://fonts.googleapis.com/css?family=Roboto";
+//@import "https://fonts.googleapis.com/css?family=Noto+Sans";
+//@import "https://fonts.googleapis.com/css?family=Poppins";
+@import "https://fonts.googleapis.com/css?family=Oxygen:400,700";
+
+//@import "https://fonts.googleapis.com/css?family=Montserrat";
+
+
+@import "../fonts/telenor/telenor-font.less";
+
+@telenor-blue: #03abe5;
+
+@titlebar-color: #e0ecf7;
+
+@background: #f3f3f3;
+
+html, body {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    //line-height: 21px;
+    background-color: @background;
+}
+
+.panel-default > .panel-heading {
+    background-color: @titlebar-color;
+}
+
+#application-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2px;
+    border-top: 5px solid @telenor-blue;
+
+    @media (min-width: 768px) {
+        & {
+            padding: 20px;
+        }
+    }
+    
+}
+
+.login-logo {
+    .logo-container{
+        font-size: 14pt;
+
+        .logo {
+            height: 2.5em;
+            width: 2.5em;
+        }
+
+        @media (min-width: 768px) {
+            & {
+                font-size: 22pt;
+            }
+        }
+    }
+}
+
+#login-view-container {
+    //min-width: 415px;
+    .panel {
+        padding: 13px;
+    }
+}
+
+.logo-container {
+    display: inline-block;
+    color: black;
+    font-size: 20pt;
+
+    a, a:hover {
+        color: black;
+    }
+
+    font-family: "telenorlight";
+    padding: 5px;
+    .logo {
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        background: url(../images/telenor-propeller.png) no-repeat;
+        background-size: contain;
+        vertical-align: bottom;
+    }
+
+    .logo-text {
+        display: inline-block;
+    }
+
+    .small {
+        margin-left: 10px;
+        font-size: 50%;
+    }
+}
+
+.userDisplay-container {
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+    font-family: "telenorlight";
+    color: #919191;
+
+    .userDisplay-username {
+        font-size: 14pt;
+    }
+
+    .userDisplay-company {
+        font-size: 14pt;
+    }
+}
+
+#application-header {
+    .logout {
+        float: right;
+    }
+}
+
+#application-toolbar {
+    font-family: 'Oxygen', sans-serif;
+    //font-size: 12pt;
+    .large {
+        font-size: 16pt;
+    }
+}
+
+table.userTable {
+    td.status {
+        text-align: center;
+
+        .userStatusIndicator {
+            font-size: 20pt;
+        }
+
+        .active {
+            color: #429a42;
+        }
+
+        .inactive {
+            opacity: 0.25;
+        }
+    }
+}
+
+
+
+.toggle-button {
+    padding: 9px 10px;
+
+    .icon-bar {
+        background-color: #888;
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+    }
+    .icon-bar + .icon-bar {
+        margin-top: 4px;
+    }
+}
+
+.access-tag {
+    font-weight: normal;
+    //padding: 3.2px 7px; /* firefox gets one pixel wrong when its 3 */
+
+    /*display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-align: center;
+    //background-color: #777777;
+    border-radius: 10px;
+    */
+
+    &.group {
+        color: white;
+        background-color: #3670bb;
+    }
+
+    &.device {
+        background-color: #c55034;
+    }
+
+    &.network {
+        color: white;
+        background-color: #188018;
+    }
+}
+
+.group-tag-selector {
+    margin-bottom: 20px;
+}
+
+.access-tag + .access-tag {
+    margin-left: 5px;
+}
+
+button + button {
+    margin-left: 5px;
+}
+
+/*.member-table .member-row td {
+}*/
+
+.member-table {
+    .select-box {
+        max-width: 24px;
+    }
+}
+
+.device-table {
+    .select-box {
+        max-width: 24px;
+    }
+}
+
+.member-table .non-member-row td {
+    background-color: #ececec;
+}
+
+table {
+    transition: opacity 500ms;
+    opacity: 1.0;
+}
+
+table.working {
+    transition: opacity 500ms;
+    opacity: 0.4;
+    animation: working-border-anim 1.5s ease-in-out infinite;
+}
+
+@working-border-color: @telenor-blue;
+
+@keyframes working-border-anim {
+    from, to {
+        box-shadow: 0 0 2px @working-border-color;
+    }
+
+    50% {
+        box-shadow: 0 0 10px @working-border-color;
+    }
+}
+
+.report-buttons {
+    float: right;
+    size: 100px;
+
+    span {
+        padding-right: 5px;
+    }
+}
+
+.report-panel {
+    .panel-heading {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+}
+
+.nav-symbol {
+    display: inline-block;
+    position: relative;
+    height: 1em;
+    width: 1.1em;
+    margin: 0 2px 0 2px;
+    cursor: pointer;
+}
+
+.nav-triangle {
+    position: absolute;
+    top: 0.22em;
+    border: 0.45em solid transparent;
+}
+
+.nav-previous       { border-right-color: #ccc; }
+.nav-previous:hover { border-right-color: #b3b3b3; }
+
+.nav-next           { border-left-color: #ccc; }
+.nav-next:hover     { border-left-color: #b3b3b3; }
+
+.nav-left {margin-right: 20px;}
+.nav-right {margin-left: 20px;}
+
+.dateHeader {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-bottom: 1px solid #aeaeae;
+    margin-bottom: -1px; /* make the popup overlap by one pixel */
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.datepickerHeader,
+.dropdown {
+    min-width: 50%;
+}
+
+.datepickerHeader {
+    text-align: center;
+    font-size: 1.5em;
+
+    .open > .dropdown-datepicker {
+        display: inline-block;
+    }
+
+    .dropdown-datepicker {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        z-index: 1000;
+        display: none;
+        float: left;
+        list-style: none;
+        font-size: 14px;
+        text-align: left;
+        background-color: #fff;-clip: padding-box;
+
+        .react-datepicker {
+            border-radius: 0;
+            font-size: 1.2rem;
+        }
+
+        .react-datepicker__current-month {
+            font-size: 1.4rem;
+        }
+
+        .react-datepicker__header {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .datePicker.section-size, .react-datepicker {
+            width: 100%;
+
+            .react-datepicker__month-container {
+                width: 100%;
+            }
+
+            .react-datepicker__day-name, .react-datepicker__day, .react-datepicker__week-number {
+                width: calc(96.0% / 8);
+                margin: 0.2%;
+            }
+        }
+
+        .react-datepicker__day--disabled:hover {
+            &.react-datepicker__day--in-range {
+            background-color: #617fa7;
+            }
+        }
+    }
+}

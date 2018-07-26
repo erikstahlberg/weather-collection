@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/static/assets/images/app/favicon.ico">
+
+    <title>Vädersamling</title>
+
+    <link rel="stylesheet" href="/static/js/rassp.style.css" >
+
+    <style>
+        #preload
+        {
+            width: 1px;
+            height: 1px;
+            opacity: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    <div id="error"></div>
+
+    <div id="preload">
+        <div class="logo-container">
+            <div class="logo"></div>
+        </div>
+    </div>
+
+    <div id="curtain">
+        <div id="loading">
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+        </div>
+    </div>
+
+    <script src="/static/js/rassp.bundle.js"></script>    
+</body>
+</html>
